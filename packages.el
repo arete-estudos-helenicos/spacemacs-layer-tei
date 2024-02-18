@@ -77,8 +77,6 @@ Each entry is either:
     :defer t
     :init
     (progn
-      (spacemacs/set-leader-keys "xh" 'xml-hide-mode))))
-
-(defun tei/post-init-nxml-mode ()
-  (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode)))
+      (spacemacs/set-leader-keys "xh" 'xml-hide-mode)
+      (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode)))))
 
